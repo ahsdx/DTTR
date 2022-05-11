@@ -1,0 +1,3 @@
+sudo git push -u origin master
+sudo git fetch origin
+sudo git merge origin/master
