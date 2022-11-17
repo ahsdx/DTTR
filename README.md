@@ -37,12 +37,12 @@ Download trained model [Baidu Drive](https://pan.baidu.com/s/1dDMcijm5PDxG2Pt392
 dttr_r50dcnv2_icdar2015.pth
 ```
 
-Then, place it in the checkpoints directory
+Then, place it in the models directory
 
 Run the model inference with a single image. Here is an example:
 
 ```bash
-python mmocr/utils/ocr.py demo/img_89.jpg --output demo/det_out.jpg --det DTTR_r50 --recog None --export demo/ --det_ckpt checkpoints/dttr_r50dcnv2_icdar2015.pth
+python mmocr/utils/ocr.py demo/img_89.jpg --output demo/det_out.jpg --det DTTR_r50 --recog None --export demo/ --det_ckpt models/dttr_r50dcnv2_icdar2015.pth
 ```
 
 The results can be find in `demo/det_out.jpg`.
@@ -52,7 +52,7 @@ The results can be find in `demo/det_out.jpg`.
 Run the following command: 
 
 ```bash
-python tools/test.py configs/textdet/dttr/dttr_r50dcnv2_cfpn_1200e_icdar2015.py checkpoints/dttr_r50dcnv2_icdar2015.pth --eval hmean-iou
+python tools/test.py configs/textdet/dttr/dttr_r50dcnv2_cfpn_1200e_icdar2015.py models/dttr_r50dcnv2_icdar2015.pth --eval hmean-iou
 ```
 
 The results should be as follows:
