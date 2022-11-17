@@ -19,8 +19,8 @@ model = dict(
         type='DBHead',
         in_channels=256,
         loss=dict(type='DBLoss', alpha=5.0, beta=10.0, bbce_loss=True),
-        # postprocessor=dict(type='DBPostprocessor', text_repr_type='quad', 
-        postprocessor=dict(type='DBPostprocessor', text_repr_type='poly', unclip_ratio=2.0,
+        postprocessor=dict(type='DBPostprocessor', text_repr_type='quad', 
+        # postprocessor=dict(type='DBPostprocessor', text_repr_type='poly', unclip_ratio=2.0,
         mask_thr=0.3, epsilon_ratio=0.002)),
     train_cfg=None,
     test_cfg=None)
