@@ -1,4 +1,4 @@
-# DTTR
+# DTTR: DETECTING TEXT WITH TRANSFORMERS
 
 ## Introduction
 
