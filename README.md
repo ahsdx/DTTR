@@ -1,5 +1,4 @@
 # DTTR
-ss
 
 ## Introduction
 
