@@ -203,6 +203,24 @@ class MMOCR:
                 'dbnet/'
                 'dbnet_r50dcnv2_fpnc_sbn_1200e_icdar2015_20211025-9fe3b590.pth'
             },
+            'DTTR_r18': {
+                'config':
+                'dttr/dttr_r18_cfpn_1200e_icdar2015.py',
+                'ckpt':
+                ''
+            },
+            'DTTR_r50': {
+                'config':
+                'dttr/dttr_r50dcnv2_cfpn_1200e_icdar2015.py',
+                'ckpt':
+                ''
+            },
+            'DTTR_curve_r50': {
+                'config': 
+                'dttr/dttr_r50dcnv2_cfpn_totaltext.py',
+                'ckpt':
+                ''
+            },
             'DBPP_r18': {
                 'config':
                 'dbnetpp/dbnetpp_r18_fpnc_1200e_icdar2015.py',
